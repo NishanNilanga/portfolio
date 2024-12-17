@@ -1,0 +1,130 @@
+.home{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    &__text--wrapper{
+        display: flex;
+        justify-content: center;
+        
+
+        h1{
+            color: var(--yellow-theme-main-color);
+            margin: 0px;
+            font-weight: 500;
+            font-size: 8rem;
+            line-height: 10rem;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typingEffectAnimation 2.5s steps(30,end);
+        }
+
+    }
+
+    &__contact-me{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+
+
+        button{
+            cursor: pointer;
+            padding: 10px 70px;
+            font-size: 2rem;
+            background: transparent;
+            color: var(--yellow-theme-main-color);
+            border: 1.5px solid var(--yellow-theme-main-color);
+            border-radius: 4px;
+            font-weight: 500;
+
+            &:hover{
+                background: var(--yellow-theme-main-color);
+                color: #000000;
+            }
+
+        }
+    }
+}
+
+
+@media only screen and (max-width : 550px){
+    .home__text--wrapper h1{
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+    
+}
+
+
+@media only screen and (min-width : 551px) and (max-width : 768px){
+    .home__text--wrapper h1{
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+    
+}
+
+
+@media only screen and (min-width : 769px) and (max-width : 990px){
+    .home__text--wrapper h1{
+        font-size: 6rem;
+        line-height: 8rem;
+    }
+}
+
+
+@keyframes typingEffectAnimation {
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 100%;
+    }
+}
+
+
+
+
+.home__social-media {
+    display: flex;          /* Align items in a row */
+    gap: 20px;              /* Space between icons */
+    margin-top: 20px;       /* Margin above the icons */
+    justify-content: center; /* Center the icons horizontally */
+  }
+  
+  .social-icon {
+    color: #34e199;            /* Default color for icons */
+    text-decoration: none;  /* Remove underline from the links */
+    display: inline-block;  /* Make sure the icons are inline */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    cursor: pointer;       /* Change cursor to pointer to indicate it's clickable */
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);   /* Slightly enlarge the icon on hover */
+    color: #0077b5;          /* Change color on hover (LinkedIn default) */
+  }
+  
+  /* Custom hover colors for each icon */
+  .fa-linkedin:hover {
+    color: #0077b5; /* LinkedIn color */
+  }
+  
+  .fa-github:hover {
+    color: #333;     /* GitHub color */
+  }
+  
+  .fa-instagram:hover {
+    color: #e1306c;  /* Instagram color */
+  }
+  
+  /* Add margin to the individual icons for better spacing */
+  .social-icon > * {
+    margin: 0;
+  }
+  
