@@ -35,7 +35,7 @@ const Home = () => {
           <button onClick={handleNavigateToContactMePage}>
             Hire Me
           </button>
-          <a href="/resume.pdf" download className="download-resume-btn">
+          <a href="/A B Nishan Nilanga Professional CV.pdf" download className="download-resume-btn">
             <button>Download Resume</button>
           </a>
         </div>
