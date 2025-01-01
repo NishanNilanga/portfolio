@@ -6,6 +6,8 @@ import ImageTwo from "../../images/image2.jpg";
 import ImageThree from "../../images/image3.jpg";
 import ImageFour from "../../images/image4.jpg";
 import ImageFive from "../../images/image5.jpg";
+import ImageSix from "../../images/image6.png";
+import ImageSeven from "../../images/image7.png";
 import "./styles.scss";
 import { useState } from "react";
 
@@ -22,12 +24,7 @@ const portfolioData = [
     link: "https://www.linkedin.com/in/nishan-nilanga/details/projects/#:~:text=all%2012%20media-,Contacts%20%2D%20Mobile%20Application,-Contacts%20%2D%20Mobile%20Application",
     image: ImageTwo,
   },
-  {
-    id: 3,
-    name: "ShoeVerse Design App",
-    image: ImageThree,
-    link: "https://www.linkedin.com/in/nishan-nilanga/details/projects/#:~:text=all%204%20media-,ShoeVerse%20%2D%20Online%20Shoe%20buying%20selling%20Application,-ShoeVerse%20%2D%20Online%20Shoe",
-  },
+  
   {
     id: 3,
     name: "Mobile Game App",
@@ -40,6 +37,25 @@ const portfolioData = [
     image: ImageFive,
     link: "https://www.linkedin.com/in/nishan-nilanga/details/projects/#:~:text=all%2011%20media-,Computer%20Spare%20Part%20Management%20System%20Web%20Application,-Computer%20Spare%20Part",
   },
+  {
+    id: 3,
+    name: "Food App UI Design",
+    image: ImageSix,
+    link: "https://www.figma.com/proto/3O3dfT9s6exDPhMT1glrht/Food-App-Design-UI-Template-(Community)?node-id=1-49&p=f&t=BtKE8hKo1PsiAJ8V-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A667",
+  },
+  {
+    id: 3,
+    name: "Landing Page UI Design",
+    image: ImageSeven,
+    link: "https://www.figma.com/proto/aADUd0B9JEAd70IOGLr6EH/Untitled?t=BtKE8hKo1PsiAJ8V-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=1-2",
+  },
+  {
+    id: 3,
+    name: "ShoeVerse Design App",
+    image: ImageThree,
+    link: "https://www.linkedin.com/in/nishan-nilanga/details/projects/#:~:text=all%204%20media-,ShoeVerse%20%2D%20Online%20Shoe%20buying%20selling%20Application,-ShoeVerse%20%2D%20Online%20Shoe",
+  },
+  
 ];
 
 const filterData = [

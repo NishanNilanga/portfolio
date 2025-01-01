@@ -9,7 +9,7 @@ import About from './containers/about';
 import Skills from './containers/skills';
 import Navbar from './components/navBar';
 import particles from "./utils.js/particles";
-
+import Certificate from "./containers/certificate";
 function App() {
 
   const location = useLocation();
@@ -42,6 +42,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/skills' element={<Skills/>}/>
         <Route path='/portfolio' element={<Portfolio/>}/>
+        <Route path='/certificate' element={<Certificate/>}/>
         <Route path='/contact' element={<Contact/>}/>
 
       </Routes>
